@@ -32,5 +32,5 @@ submitButton.addEventListener("click", function() {
         method: "POST"
     })
     .then(output.innerHTML = "Yarne zal optijd zijn!")
-    .catch(output.innerHTML = "Incorrect username or password!");  
+    .catch(output.innerHTML = "Not all fields were filled in correctly");  
 });
