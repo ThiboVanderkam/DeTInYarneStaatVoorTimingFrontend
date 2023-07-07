@@ -1,0 +1,38 @@
+input, select {
+    color-scheme: dark;
+    margin-bottom: 5%
+}
+
+body {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    border-radius: 10%;
+    width: 90%;
+    padding-bottom: 10%;  
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(50, 78, 188);
+}
+
