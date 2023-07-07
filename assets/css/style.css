@@ -1,11 +1,14 @@
 input, select {
     color-scheme: dark;
-    margin-bottom: 5%
+    margin-bottom: 8%;
+    color: rgb(200, 200, 200);
+    border: 0;
+    padding: 5% 5% 5% 5%;
 }
 
 body {
-    background-color: rgb(54, 54, 54);
-    color: white;
+    background-color: #222831;
+    color: rgb(200, 200, 200);;
     font-family: "Lucida Console", "Courier New", monospace;
     display: flex;
     flex-direction: column;
@@ -16,10 +19,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(80, 80, 80);
-    border-radius: 10%;
-    width: 90%;
-    padding-bottom: 10%;  
+    background-color: #393E46;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;  
+    margin: 3% 3% 3% 3%;
 }
 
 .form {
@@ -32,7 +38,22 @@ h1 {
     text-align: center;
 }
 
-.button {
-    background-color: rgb(50, 78, 188);
+p {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+.button {
+    background-color: rgb(150,150,150);
+    color: #222831;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: rgb(200,200,200);
+}
+
+.button:active {
+    transform: translateY(4px);
+}
