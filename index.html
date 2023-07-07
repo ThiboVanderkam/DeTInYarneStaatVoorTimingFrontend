@@ -16,13 +16,16 @@
             Help Yarne met het onthouden van zijn afspraken door een afspraak toe te voegen! <br>
             Eens toegevoegd, worden er automatisch berichten gestuurd naar Yarne en jij bepaalt hoeveel!
         </p>
-
-        <p>
-            Als Yarne jou als vriend beschouwt, dan heb je de inloggegevens gekregen op het kaartje. <br>
-            De Username en Password moet je ingeven na je op verzenden hebt gedrukt.
-        </p>
         
-        <form class="form">
+        <form class="form" onsubmit="return false;">
+            
+            <label for="username-input">Username:</label>
+            <input type="text" id="username-input" placeholder="username" maxlength="300" required>
+            
+            <label for="password-input">Password:</label>
+            <input type="password" id="password-input" placeholder="password" maxlength="300" required>
+        
+
             <label for="titel-input">Titel:</label>
             <input type="text" id="title-input" placeholder="titel" maxlength="300" required>
         
@@ -46,9 +49,12 @@
         
             <label for="name-input">Naam:</label>
             <input type="text" id="name-input" placeholder = "naam"  maxlength="300" required>
-            <br>
-            <input type="button" id="submitButton" class="button" value="Verzenden">
-        </form>    
+            <input type="submit" id="submitButton" class="button" value="Verzenden">
+        </form>
+        
+        <p id="response-output">
+
+        </p>
     </div>
 
     
