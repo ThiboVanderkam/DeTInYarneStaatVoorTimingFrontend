@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeTInYarneStaatVoorTiming</title>
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="mainsection">
-        <h1>
-            De T in Yarne staat voor timing
-        </h1>
-    
-        <p>
-            Help Yarne met het onthouden van zijn afspraken door een afspraak toe te voegen! <br>
-            Eens toegevoegd, worden er automatisch berichten gestuurd naar Yarne en jij bepaalt hoeveel!
-        </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DeTInYarneStaatVoorTiming</title>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="mainsection">
+            <h1>
+                De T in Yarne staat voor timing
+            </h1>
         
-        <form class="form" onsubmit="return false;">
+            <p>
+                Help Yarne met het onthouden van zijn afspraken door een afspraak toe te voegen! <br>
+                Eens toegevoegd, worden er automatisch berichten gestuurd naar Yarne en jij bepaalt hoeveel!
+            </p>
             
-            <label for="username-input">Username:</label>
-            <input type="text" id="username-input" placeholder="username" maxlength="300" required>
+            <form class="form" onsubmit="return false;">
+                <label for="titel-input">Titel:</label>
+                <input type="text" id="title-input" placeholder="titel" maxlength="300" required>
             
-            <label for="password-input">Password:</label>
-            <input type="password" id="password-input" placeholder="password" maxlength="300" required>
-        
+                <label for="date-input">Datum:</label>
+                <input type="date" id="date-input" required>
+            
+                <label for="time-input">Time:</label>
+                <input type="time" id="time-input" required>
+            
+                <label for="location-input">Locatie:</label>
+                <input type="text" id="location-input" placeholder="locatie"  maxlength="300" required>
+            
+                <label for="importance-input">Hoe belangrijk?:</label>
+                <select name="importance" id="importance-input">
+                    <option value=1>1: Suggestie</option>
+                    <option value=2>2: Verplicht</option>
+                    <option value=3>3: Heel belangrijk</option>
+                    <option value=4>4: Leven of dood</option>
+                    <option value=5>5: Tering dood</option>
+                </select>
+            
+                <label for="name-input">Naam:</label>
+                <input type="text" id="name-input" placeholder = "naam"  maxlength="300" required>
+                <input type="submit" id="submitButton" class="button" value="Verzenden">
+            </form>
+            
+            <p id="response-output">
 
-            <label for="titel-input">Titel:</label>
-            <input type="text" id="title-input" placeholder="titel" maxlength="300" required>
-        
-            <label for="date-input">Datum:</label>
-            <input type="date" id="date-input" required>
-        
-            <label for="time-input">Time:</label>
-            <input type="time" id="time-input" required>
-        
-            <label for="location-input">Locatie:</label>
-            <input type="text" id="location-input" placeholder="locatie"  maxlength="300" required>
-        
-            <label for="importance-input">Importance:</label>
-            <select name="importance" id="importance-input">
-                <option value=1>1: Zachte herinnering</option>
-                <option value=2>2: Geheugensteuntje</option>
-                <option value=3>3: Vervelend veel berichten</option>
-                <option value=4>4: Spam</option>
-                <option value=5>5: DDOS-aanval</option>
-            </select>
-        
-            <label for="name-input">Naam:</label>
-            <input type="text" id="name-input" placeholder = "naam"  maxlength="300" required>
-            <input type="submit" id="submitButton" class="button" value="Verzenden">
-        </form>
-        
-        <p id="response-output">
-
-        </p>
-    </div>
-
-    
-    
-
-
-    <script src="assets/js/script.js">
-    </script>
-</body>
+            </p>
+        </div>
+        <script src="assets/js/script.js">
+        </script>
+    </body>
 </html>
